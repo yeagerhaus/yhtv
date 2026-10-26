@@ -1,0 +1,38 @@
+{
+  "name": "yhtv",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "android:home": "LAUNCHER_HOME=1 expo prebuild --clean --platform android && expo run:android --variant release",
+    "prebuild": "expo prebuild --clean --platform android",
+    "lint": "expo lint",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run lint && bun run typecheck"
+  },
+  "dependencies": {
+    "expo": "~57.0.13",
+    "expo-constants": "~57.0.22",
+    "expo-linking": "~57.0.13",
+    "expo-router": "~57.0.29",
+    "expo-splash-screen": "~57.0.6",
+    "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.4",
+    "react": "19.2.3",
+    "react-native": "npm:react-native-tvos@0.86.3-0",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@react-native-tvos/config-tv": "^0.1.6",
+    "@types/react": "~19.2.2",
+    "eslint": "^9",
+    "eslint-config-expo": "~57.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3"
+  },
+  "private": true
+}
